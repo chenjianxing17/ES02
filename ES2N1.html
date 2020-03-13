@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Course;
+        {
+            var _name = null;
+            let Car;
+            {
+                let _color = null;
+                Car = function (color){
+                    _color = color;}
+                Car.prototype.setColor = function (value) {
+                    _color = value;}
+                Car.prototype.getColor = function(){
+                    return _color;}
+            }
+            let car = new Car('red');
+            console.log(car.getColor());
+            car.setColor('black');
+            console.log(car.getColor());
+            console.log(_color);
+        }
+        let course = new Course('sql');
+        course.log(course.getName());
+        course.setName('vue');
+        console.log(course.getName());
+        console.log(_name);
+    </script>
+</body>
+</html>
